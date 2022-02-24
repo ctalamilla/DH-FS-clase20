@@ -1,5 +1,6 @@
 // Módulos
 const express = require('express');
+const { dirname } = require('path');
 const app = express();
 const path = require('path');
 const mainRoutes = require('./routes/mainRouter')

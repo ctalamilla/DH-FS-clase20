@@ -7,6 +7,6 @@ const controlador = require('../controllers/mainController')
 const router = express.Router();
 router.get('/', controlador.index);
 
-router.get('/detalleMenu', controlador.detalleMenu);
+router.get('/#menu', controlador.detalleMenu);
 // Acá exportamos el resultado
 module.exports = router;
