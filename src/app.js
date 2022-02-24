@@ -10,7 +10,7 @@ const mainRoutes = require('./routes/mainRouter')
 app.use(express.static('public'));
 // Acá falta el template engine
 app.set('view engine', 'ejs');
-app.set('views', '.src/views')
+app.set('views', path.join(__dirname,'/views'))
 // Rutas
 app.use(mainRoutes);
 // Acá falta el archivo de rutas y después las vistas de EJS

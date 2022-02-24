@@ -3,9 +3,9 @@ const path = require('path');
 // Acá nos falta un objeto literal con las acciones para cada ruta
 const controlador = {
     index: (req, res)=>{
-        res.sendFile(path.join(__dirname,'../views/index.html'))},
+        res.render('index')},
     detalleMenu: (req, res)=>{
-        res.sendFile(path.join(__dirname,'../views/detalleMenu.html'))},
+        res.render('detalleMenu')},
 }
 // Acá exportamos el resultado
 module.exports = controlador;
