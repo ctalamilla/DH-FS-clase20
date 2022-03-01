@@ -7,6 +7,10 @@ const controlador = require('../controllers/mainController')
 const router = express.Router();
 router.get('/', controlador.index);
 
-router.get('/#menu', controlador.detalleMenu);
+router.get('/menu/:idPlato', controlador.detalleMenu);
+
+
+router.get('/detallePlato/:idPlato', controlador.detallePlato);
+
 // Acá exportamos el resultado
 module.exports = router;
